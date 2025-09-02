@@ -14,9 +14,10 @@ from langchain_groq import ChatGroq
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Set API keys - use environment variables for security
-os.environ["OPENAI_API_KEY"] = os.getenv("you_api_key_here")
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "you_api_key_here")
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY", "you_api_key_here")
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY", "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")
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "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")
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY", "AIzaSyDRsmBN2M81x9XMyNOnzEPWtk0JZ1yFqhc")
+
 
 app = FastAPI(title="PDF RAG API", description="RAG system for PDF documents with multiple LLM support")
 
